@@ -1,0 +1,17 @@
+{
+  "name": "todo-app-express-sqlite",
+  "version": "1.0.0",
+  "description": "Aplikasi to-do list sederhana: Express + SQLite + HTML/CSS/JS biasa",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "dev": "node --no-warnings --watch server.js",
+    "test": "node --no-warnings test/store.test.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

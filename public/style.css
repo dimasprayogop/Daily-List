@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+  align-self: flex-start;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.todo-form input:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 1px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message {
+  min-height: 1.25rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.message.error {
+  color: #b91c1c;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.todo-item input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+}
+
+.todo-title {
+  flex: 1;
+  word-break: break-word;
+}
+
+.todo-item.done .todo-title {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.todo-item .secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.85rem;
+}
+
+.todo-item .secondary:hover {
+  background: #cbd5e1;
+}
+
+.todo-item .danger {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.85rem;
+}
+
+.todo-item .danger:hover {
+  background: #fecaca;
+}
+
+.empty {
+  padding: 1rem 0;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.summary {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
